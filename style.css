@@ -1,0 +1,139 @@
+body {
+  background: #091d29;
+  padding: 15em 5em 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant SC', serif;
+  background-image: linear-gradient(0deg, rgba(9, 29, 41, 0.9), rgba(9, 29, 41, 0.9)),url(napamapmed.jpg);
+  background-size:cover;
+}
+img{
+  display: none;
+}
+.title{
+  position:absolute;
+  margin-top:-300px;
+  color:#756513;
+  text-align:center;
+  font-family: 'Cormorant SC', serif;
+  font-weight: 600;
+  font-size: 70px;
+}
+.contact{
+  position:absolute;
+  margin-top:300px;
+  color:#756513;
+  text-align:center;
+  font-family: 'Cormorant SC', serif;
+  font-weight:400;
+  font-size: 30px;
+  line-height: 2.7REM;
+}
+.contact a{
+  color:#756513;
+  text-decoration: none;
+}
+.contact a:hover{
+  color:#AF971D;
+}
+.bar {
+  position: relative;
+  margin-top:100px;
+  width: 300px;
+  border-bottom: solid 4px #756513;
+}
+
+.wine {
+  position: relative;
+  left: 190px;
+  width: 35px;
+  height: 70px;
+  border: solid 4px #756513;
+  border-radius: 24% 24% 0 0;
+}
+.wine::before, .wine::after {
+  content: "";
+  position: absolute;
+}
+.wine::before {
+  top: -38px;
+  left: 11px;
+  width: 5px;
+  height: 30px;
+  border: solid 4px #756513;
+}
+.wine::after {
+  top: -42px;
+  left: 6px;
+  width: 24px;
+  height: 4px;
+  border-bottom: solid 4px #756513;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cup {
+  position: absolute;
+  bottom: 20px;
+  right: 55px;
+  width: 20px;
+  height: 35px;
+  border: solid 4px #756513;
+  border-radius: 0 0 40% 40%;
+}
+.cup::before, .cup::after {
+  content: "";
+  position: absolute;
+}
+.cup::before {
+  bottom: -22px;
+  left: calc(50% - 2px);
+  height: 20px;
+  border-right: solid 4px #756513;
+}
+.cup::after {
+  width: 20px;
+  height: 5px;
+  bottom: -25px;
+  border-bottom: solid 4px #756513;
+}
+
+.dishes {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  z-index: -1;
+  width: 200px;
+  height: 50px;
+  overflow-y: hidden;
+}
+
+.dish {
+  position: absolute;
+  top: 20px;
+  width: 60px;
+  height: 40px;
+  border: solid 4px #756513;
+  border-radius: 40% 40% 80%;
+  transform: rotate(25deg);
+}
+.dish.d-0 {
+  left: 4px;
+}
+.dish.d-1 {
+  left: 54px;
+}
+.dish.d-2 {
+  left: 104px;
+}
+.dish.d-0::after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  bottom: 25px;
+  z-index: -1;
+  width: 6px;
+  height: 6px;
+  border: solid 4px #756513;
+  border-radius: 50%;
+}
